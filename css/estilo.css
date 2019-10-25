@@ -1,62 +1,57 @@
-.simulador-novo-participante {
+#div-simulador-plano-cd {
+	margin: 0 auto;
+	max-width: 900px; /*600px*/
+	color: #000;
+	line-height: 150%;
+	letter-spacing: 0.5px;
+	font: 14px/20px Arial, Helvetica, sans-serif;
+}
+
+#div-simulador-plano-cd form {
 	width: auto;
 	height: auto;
-	margin: 0 auto;
 	text-align: left;
-	font: 14px/20px Arial, Helvetica, sans-serif;
-	color: #000;
 }
 
-fieldset {
+#div-simulador-plano-cd fieldset {
 	padding: 10px 15px;
-	border: 1px solid #033d7b;
-	justify-content: center;
+	border: 2px solid #033d7b;
 
 }
 
-legend {
-	font-size: 12px;
-	text-align: justify;
+#div-simulador-plano-cd .field {
+	float: none;
+	width: 100%;
+    display: block; /*display dos inputs*/
+	margin: 10px;
 }
 
-.field {
-	border: 0px;
-    float: none;
-    display: inline-block;
-	margin: 5px;
-}
-
-.fieldset-titulo {
+#div-simulador-plano-cd .fieldset-titulo {
+	width: auto;
 	font-size: 20px;
 	text-transform: uppercase;
 	text-align: center;
 	color: #033d7b;
 }
 
-.simulador-novo-participante fieldset .field-nascimento,
-.simulador-novo-participante fieldset .field-sexo,
-.simulador-novo-participante fieldset .field-idade-aposentadoria,
-.simulador-novo-participante fieldset .field-aporte-inicial,
-.simulador-novo-participante fieldset .field-salario-real-contribuicao,
-.simulador-novo-participante fieldset .field-contribuicao-espontanea,
-.simulador-novo-participante fieldset .field-rentabilidade-esperada,
-.simulador-novo-participante fieldset .field-prazo-recebimento
- {
-	width: 46%;
-}
-
-.simulador-novo-participante fieldset .field .iMask {
+#div-simulador-plano-cd input,
+#div-simulador-plano-cd select {
 	text-transform: uppercase;
 	width: 100%;
 	height: 20px;
 }
 
-.div-calcular{
+#div-simulador-plano-cd legend{
+	font-size: 12px;
+	text-align: justify;
+}
+
+.div-calcular-simulacao {
 	padding-top: 10px;
 	text-align: center;
 }
 
-.botao-calcular {
+#botao-calcular-simulacao {
 	text-align: center;
 	color: #fff;
 	padding: 3px;
@@ -68,31 +63,43 @@ legend {
 	font-size: 12px;
 }
 
-.resultado-contribuicao-valor,
-.resultado-beneficio-valor,
-.resultado-reserva-valor,
-.resultado-prazo-recebimento-valor {
+#tabela-resultado-simulacao {
+	margin: 0 auto;
+	width: 100%;
+	display: table;
+	border-collapse: collapse;
+	border-spacing: 2px;
+    border-color: #000;
+}
+
+#tbody-resultado-simulacao .resultado-contribuicao-valor,
+#tbody-resultado-simulacao .resultado-reserva-valor,
+#tbody-resultado-simulacao .resultado-beneficio-valor,
+#tbody-resultado-simulacao .resultado-prazo-recebimento-valor {
 	padding-left: 35px;
 	text-align: right;
 }
 
-.simulador-novo-participante-resultado {
-	width: 350px;
-}
-
-#mensagem-erro {
+#mensagem-erro-simulacao {
 	color: red;
 	font-weight: bold;
-}
-
-#nota-contribuicao {
-	color: black;
-	font-weight: bold;
-}
-
-ul {
 	text-align: center;
+	text-transform: uppercase;
 	list-style: none;
+}
+
+#nota-simulacao {
+	background-color: #eee;
+	border-left: 5px solid #033d7b;
+	border-right: 5px solid #033d7b;
+	text-align: justify;
+	padding: 10px;
+	margin:10px 0;
+	list-style: none;
+}
+
+#nota-simulacao li {
+	padding: 10px;
 }
 
 form input[type="number"] {
